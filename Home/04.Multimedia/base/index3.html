@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .fig {
+         float: left; 
+         
+        }
+       </style>
+</head>
+<body>
+    <p><img src="Icon-Python.png" alt="image" title="Программа на Python — часть 3" class="fig" ></p>
+    <p><a name="top"></a></p>
+    <h1>HOW-TO: Программа на Python, Часть 3</h1>
+    <ul>
+        <li><a href="index1.html"> Программа на Python — часть 1</a></li>
+        <li><a href="index2.html"> Программа на Python — часть 2</a></li>
+        <li><a href="index3.html"> Программа на Python — часть 3</a></li>
+    </ul>
+    <h2 id="up">Содержание</h2> 
+
+    <h3>HOW-TO: Программа на Python, Часть 3</h3>
+    <ul>
+        <li><a href="#but">Модули</a></li>
+        <li><a href="#bot">Функции</a></li>
+    </ul>
+    <hr>
+    <p>В прошлый раз мы изучали списки, подстановку переменных, комментарии, сравнение и<br>
+        присвоение, операторы <strong>if</strong> и <strong>while</strong>. Я обещал, что в этой части мы изучим модули и<br>
+        функции. Давайте начнём.</p>
+        <h2 id="but">Модули</h2>
+        <ul>
+            <li><a href="#up"> К содержанию</a></li>
+            
+        </ul>
+        <p>Модули предлагают способ расширить программирование на Python. Вы можете создать<br>
+            свои модули, использовать те, которые поставляются с Python или которые написали<br>
+            другие. В самом Python есть сотни модулей, которые облегчают написание программ.<br>
+            Список модулей, поставляемых с Python, находится по адресу:<br>
+            <A href="http://docs.python.org/modindex.html"> http://docs.python.org/modindex.html </A>. Некоторые модули предназначены для определённых<br>
+            операционных систем, но большинство из них кроссплатформенные и работают<br>
+            одинаково на <a href="https://ru.wikipedia.org/wiki/Linux" target=“_blank”> Linux</a>
+                
+            , <a href="https://ru.wikipedia.org/wiki/MacOS" target=“_blank”> Mac</a> и <a href="https://ru.wikipedia.org/wiki/Windows" target=“_blank”> Microsoft Windows</a>. Для использования внешнего модуля<br>
+            необходимо импортировать его в программу. Один из модулей, поставляемых с Python,<br>
+            называется «random». Он даёт возможность генерир</p>
+            <div style="font-family:'Courier New',  monospace">#=======================================</div>
+            <div style="font-family:'Courier New',  monospace"># random_example.py</div>
+            <div style="font-family:'Courier New',  monospace"># Module example using the random module</div>
+            <div style="font-family:'Courier New',  monospace">#=======================================</div>
+            <div style="font-family:'Courier New',  monospace">import random</div>
+            <div style="font-family:'Courier New',  monospace"># print 14 random integers</div>
+            <div style="font-family:'Courier New',  monospace">for cntr in range(1,15):</div>
+            <div style="font-family:'Courier New', monospace">&nbsp;&nbsp;      print random.randint(1,10)</div>
+            <p>Давайте разберём код по строкам. Первые четыре строки — это комментарии, о которых<br>
+                мы говорили в прошлый раз. Пятая строка говорит Python, что нужно использовать<br>
+                модуль «random». Мы должны явно указать Python на это</p>
+                <hr>
+                <h2 id="bot">Функции</h2>
+                <ul>
+                    <li><a href="#up"> К содержанию</a></li>
+                    
+                </ul>
+                <p>Когда мы импортировали модуль random, мы использовали функцию <strong>randint()</strong>. Функция<br>
+                    — это блок кода, который создан для того, чтобы вызывать его в программе, обычно,<br>
+                    более одного раза. Это упрощает работу над программой и предотвращает набор одного и<br>
+                    того же кода снова и снова. Грубо говоря, если вам нужно написать некоторый код<br>
+                    больше, чем 1-2 раза, стоит сделать его функцией. Хотя следующие два примера очень<br>
+                    простые, это хорошие примеры функций. Теперь мы хотим, скажем, взять два числа,<br>
+                    сложить их, перемножить, вычесть одно из другого, затем вывести на экран эти числа и<br>
+                    результаты одновременно. Допустим, нам нужно сделать это три раза для трёх наборов<br>
+                    чисел. Тогда наш пример будет выглядеть как код ниже.
+                    </p>
+            <div style="font-family:'Courier New',  monospace">#silly example</div>
+            <div style="font-family:'Courier New',  monospace">print '%d + %d = %d ' % (1,2,1+2)</div>
+            <div style="font-family:'Courier New',  monospace">print '%d * %d = %d ' % (1,2,1*2)</div>
+            <div style="font-family:'Courier New',  monospace">print '%d - %d = %d ' % (1,2,1-2)</div><br>
+            <div style="font-family:'Courier New',  monospace">print '\n'</div>
+            <div style="font-family:'Courier New',  monospace">print '%d + %d = %d ' % (1,4,1+4)</div>
+            <div style="font-family:'Courier New',  monospace">print '%d * %d = %d ' % (1,4,1*4)</div>
+            <div style="font-family:'Courier New',  monospace">print '%d - %d = %d ' % (1,4,1-4)</div><br>
+            <div style="font-family:'Courier New',  monospace">print '\n'</div>
+            <div style="font-family:'Courier New',  monospace">print '%d + %d = %d ' % (10,5,10+5)</div>
+            <div style="font-family:'Courier New',  monospace">print '%d * %d = %d ' % (10,5,10*5)</div>
+            <div style="font-family:'Courier New',  monospace">print '%d - %d = %d ' % (10,5,10-5)</div>
+            <div style="font-family:'Courier New',  monospace">print '\n'</div>
+            <p>Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при<br>
+                написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую<br>
+                назовём <i><strong>«DoTwo»</strong></i>. Она будет каждый раз брать два числа, проводить математические<br>
+                операции и выводить результат. Начнём с ключевого слова <i><strong>«def»</strong></i>, которое сигнализирует<br>
+                о том, что мы собираемся определить функцию. После слова <i><strong>«def»</strong></i> добавим название<br>
+                функции и список параметров, если таковые имеются, в круглых скобках. Эту строку<br>
+                необходимо завершить двоеточием. Код функции набирается с отступом. Наш<br>
+                улучшенный простой пример (<u>№2</u>) показан ниже.</p>
+            <div style="font-family:'Courier New',  monospace">#silly example 2...still silly, but better</div>
+            <div style="font-family:'Courier New',  monospace">pdef DoTwo(num1,num2):</div>
+            <div style="font-family:'Courier New',  monospace">&nbsp;&nbsp; print '%d + %d = %d ' % (num1,num2,num1+num2)</div>
+            <div style="font-family:'Courier New',  monospace">&nbsp;&nbsp; print '%d * %d = %d ' % (num1,num2,num1*num2</div>
+            <div style="font-family:'Courier New',  monospace">&nbsp;&nbsp; print '%d - %d = %d ' % (num1,num2,num1-num2)</div>
+            <div style="font-family:'Courier New',  monospace">&nbsp;&nbsp; print '\n'</div>
+            <div style="font-family:'Courier New',  monospace">DoTwo(1,2)</div>
+            <div style="font-family:'Courier New',  monospace">pDoTwo(1,4)</div>
+            <div style="font-family:'Courier New',  monospace">DoTwo(10,5)</div>
+            <p>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет что-<br>
+                либо поменять в функции, мы сможем сделать это, не создавая проблем для нашей<br>
+                программы. Чтобы вызвать функцию, нужно написать её имя и параметры.</p>
+
+                <table width="80%">
+                    <tr>
+                        <td align="left"><a href="index2.html"> <img src="left.png" title="left" alt="предыдущая страница">    </td>
+                            <td align="center"><a href="#top"> <img src="home.png" title="home" alt="наверх">    </td>
+                                <td align="right"><a href=" "> <img src="right.png" title="right" alt="следующая страница">    </td>
+                    </tr>
+                    
+                    
+                    
+                            </table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+.item1 {background-color: blue; width: 137px; height: 201px; float: left;background-image: url(cards.png); background-position: 0px 1189px; }
+.item2 {background-color: red; width: 137px; height: 201px;float: left; margin-left: 20px;background-image: url(cards.png);background-position: 0px 988px}
+.item3 {background-color: green; width: 137px; height: 201px;float: left; margin-left: 20px;background-image: url(cards.png);background-position: 0px 789px}
+.item4 {background-color: gold; width: 137px; height: 201px;float: left; margin-left: 20px;background-image: url(cards.png);background-position: 0px 589px}
+.item5 {background-color: black; width: 137px; height: 201px;float: left; margin-left: 20px;background-image: url(cards.png);background-position: 0px 389px}

@@ -12,18 +12,18 @@
         <tr>
             <td>
                 <p><strong>Простая форма поиска с вариантами:</strong></p>
-            <form action="http://fe.it-academy.by/TestForm.php" >
+            <form action="http://fe.it-academy.by/TestForm.php" method="post" >
 
                 <fieldset>
                <legend>Строка поиска</legend>
-               <input type="text" maxlength="10"  >
-                <input type="submit" value="Искать"> <br> 
+               <input type="text" maxlength="10" name="searh1" >
+                <input type="submit" value="Искать" > <br> 
                <label >
                 <label>
-                    <input type="radio" name="radio_group" value="value_01" > на сайте
+                    <input type="radio" name="on site1" value="value_01" > на сайте
                    </label>
                    <label>
-                     <input type="radio" name="radio_group" value="value_02" checked> в google<br> 
+                     <input type="radio" name="google1" value="value_02" checked> в google<br> 
                      <i>Длина запроса не более 10 символов</i>
                         
                      </label>
@@ -32,7 +32,7 @@
             </td>
             <td>
                 <p><strong>Простая форма поиска с вариантами:</strong></p>
-                <form action="http://fe.it-academy.by/TestForm.php" >
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" >
 
                     <fieldset>
                    <legend>Строка поиска</legend>
@@ -40,10 +40,10 @@
                     <input type="submit" value="Искать"> <br> 
                    <label >
                     <label>
-                        <input type="radio" name="radio" value="value_01" > на сайте
+                        <input type="radio" name="on site2" value="value_01" > на сайте
                        </label>
                        <label>
-                         <input type="radio" name="radio" value="value_02" checked > в google<br> 
+                         <input type="radio" name="google2" value="value_02" checked > в google<br> 
                             </label>
                             <i>*-обязательное поле</i>
                     </fieldset>

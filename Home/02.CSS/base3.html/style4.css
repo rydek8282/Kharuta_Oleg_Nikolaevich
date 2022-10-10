@@ -1,0 +1,6 @@
+.navi {background-color: bisque; width: 15em;   float: left;}
+.state1 {background-color: aquamarine; margin-bottom: 0.2em; margin-left: 15em;}
+.state2 {background-color: aquamarine; margin-bottom: 0.2em; margin-left: 15em;}
+.footer {overflow: auto; background-color: darkolivegreen; clear: both;}
+.image {width: 50px; float: right;}
+.line {clear: both;}

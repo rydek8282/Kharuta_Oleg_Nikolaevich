@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.MenuLevel1 { width: 100px }
+    div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
+    div.MenuLevel2 { width: 100px; display: none }
+    div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
+    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute;  z-index: 1; }
+    .tuesday {left: 101px; top: -20px;}
+    .wednesday { left: 202px; top: -40px;}
+    .thursday { left: 303px; top: -60px;}
+    .friday { left: 404px; top: -80px;}
+    .saturday { left: 505px; top: -100px;}
+    .sunday { left: 606px; top: -120px;}
+    @media all and (max-width: 715px  ){
+        div.MenuLevel1 { width: 100px }
+    div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
+    div.MenuLevel2 { width: 100px; display: none }
+    div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
+    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute;left: 100%; top: 0% ; z-index: 1; transition: cubic-bezier(1, 0, 0, 1); }
+    .tuesday {left: 0px; top: 0px;}
+    .wednesday {left: 0px; top: 0px;}
+    .thursday {left: 0px; top: 0px;}
+    .friday {left: 0px; top: 0px;}
+    .saturday {left: 0px; top: 0px;}
+    .sunday {left: 0px; top: 0px;}
+    
+    }
+</style>
+
+
+
+<body>
+    
+
+
+<div class='MenuLevel1'>
+    <div>Понедельник</div>
+    <div class="tuesday">
+        Вторник
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+            <div>И компот</div>
+        </div>
+    </div>
+    <div class="wednesday">  Среда </div>
+    <div class="thursday">Четверг</div>
+    <div class="friday">Пятница</div>
+    <div class="saturday">Суббота</div>
+    <div class="sunday">Воскресенье</div>
+
+</div>
+
+
+</body>
+</html>

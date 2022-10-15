@@ -1,0 +1,15 @@
+.table { border-collapse: collapse ;border:2px    grey}
+.line1 { border-bottom:2px  dotted  grey; background-color: rgb(231, 220, 223);width: 100%; }
+.line2 { border-bottom:2px  dotted  grey;background-color: antiquewhite;}
+.line2 { border-bottom:2px  dotted  grey; }
+.line4 { border-bottom:2px  dotted  grey;background-color: antiquewhite;}
+.line5 { border-bottom:2px  dotted  grey; }
+.line6 { border-bottom:2px  dotted  grey;background-color: antiquewhite;}
+
+    th, td {
+        border: 2px dotted #333 ; 
+     
+       }
+       tr:hover { 
+        background: #d5e6a2; 
+       }

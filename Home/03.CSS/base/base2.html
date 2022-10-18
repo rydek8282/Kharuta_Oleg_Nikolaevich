@@ -11,7 +11,7 @@
     div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
     div.MenuLevel2 { width: 100px; display: none }
     div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
-    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute;  z-index: 1; transition-timing-function:ease-in  }
+    div.MenuLevel1 > div:hover div.MenuLevel2 { position: absolute;  z-index: 1; transition-timing-function:ease-in  }
     .tuesday {left: 101px; top: -20px;}
     .wednesday { left: 202px; top: -40px;}
     .thursday { left: 303px; top: -60px;}
@@ -21,7 +21,7 @@
     @media all and (max-width: 715px  ){
         div.MenuLevel1 { width: 100px }
     div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
-    div.MenuLevel2 { width: 100px; display: none }
+    div.MenuLevel2 { width: 100px;  }
     div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
     div.MenuLevel1 > div:hover div.MenuLevel2 {  position: absolute;left: 100%; top: 0% ; z-index: 1; transition-duration: 1s;
   transition-timing-function: ease-out; }

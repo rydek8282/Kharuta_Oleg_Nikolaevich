@@ -1,0 +1,13 @@
+div {border: 1px solid  black; width: 700px; 
+    height: 150px; padding: 10px; border-top-right-radius: 20px;border-bottom-left-radius: 20px;}
+
+
+
+.list span
+{visibility: hidden; left: auto;}
+.list:hover span {  visibility: visible;}
+
+a[href$="arrow1"]::before {content: url(arrow.png);}
+a[href$="worlddoc"]::after {content: url(world.jpg);}
+a[href$="pdfdoc"]::after {content: url(pdf.png);}
+a[href$="zipdoc"]::after {content: url(zip.gif);}

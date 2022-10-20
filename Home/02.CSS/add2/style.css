@@ -1,0 +1,7 @@
+.biggy {display: flex; flex-direction: row; align-items: stretch;}
+.navi {background-color: bisque; width: 15em;   }
+.state1 {background-color: aquamarine; margin-bottom: 0.2em;display: flex; }
+.state2 {background-color: aquamarine; display: flex; flex-direction: column; overflow: hidden;margin-left: 15em}
+
+.image {width: 50px; align-self: flex-end;}
+.footer {background-color: darkolivegreen; }
